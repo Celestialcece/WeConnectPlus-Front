@@ -40,44 +40,60 @@ import SiteLayout from '../layouts/Layout.astro';
 	/* MOBILE 
 	---------------------------------------------------------------------
 	*/
-
 	body {
 		margin: 0em;
 	}
 
 	.title {
-            display: flex;
-            align-items: center;
-            margin-left: 0em;
-			size: 0em;
-			font-size: 0em;
-			margin: 0em;
-        }
+		display: flex;
 		
-		.text {
-            color: white;
-            font-size: 5em;
-        }
-
-
-		.container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 0em;
-            color: black;
-        }
-
-	.Image {
-		margin-top: 0em;
+		align-items: center;
 		margin-left: 0em;
-		height: 70vh;
-		width: auto;
-		object-fit: cover;
+		size: 0em;
+		font-size: 0em;
+		margin: 0em;
+	}
+	
+	.text {
+		color: white;
+		font-size: 5em;
 	}
 
+
+
+	.container {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0em;
+		color: black;
+	}
+
+	.container {
+		position: relative; 
+	}
+
+	.Image {
+		z-index: 1; 
+		width: 100vw; 
+		height: auto; 
+		object-fit: cover; 
+		box-sizing: border-box; 
+		max-height: 21.5em;
+
+	}
+
+	.Name, .AgeRange {
+		position: absolute; 
+		z-index: 2; 
+	}
+
+
 	.Content {
-		height: 80vh;
-		width: 112vh;
+		margin-top: 0.5em;
+		height: auto;
+		width: 95vw; 
 		background: rgba(255, 253.94, 253.94, 0.80); 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 		border-radius: 3px; 
@@ -89,29 +105,54 @@ import SiteLayout from '../layouts/Layout.astro';
 		margin-left: 1em;
 		margin-top: 0.5em;
 		margin-bottom: 0em;
+		color: white;		
+		top: -4%; 
+		left: -9%; 
+		text-shadow: 
+		-2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px 2px 0 #000,
+         2px 2px 0 #000,
+        0px -2px 0 #000,
+        0px 2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000;
 	}
 
 	.AgeRange {
 		font-size: 2em;
 		margin-left: 2em;
 		margin-top: 0em;
+		color: white;
+		top: 10%; 
+		left: -8%; 
+		text-shadow: 
+		-2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px 2px 0 #000,
+         2px 2px 0 #000,
+        0px -2px 0 #000,
+        0px 2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000;
 	}
 
 	.ConnectThrough {
-		font-size: 2em;
-		margin-left: 2em;
-		margin-top: 1.6em;
+		font-size: 1.5em;
+		margin-left: 0.5em;
+		margin-top: 0.3em;
 		margin-bottom: 0em;
 	}
 
 	.tags {
-		margin: 0.5em;
+		margin-left: 0em;
 	}
 
 	.TagList {
-		margin: 0em;
+		margin-left: 0.8em;
+		margin-top: 0em;
 		width: 9em;
-		
+		padding: 0em;
 	}
 
 	.Gamer {
@@ -126,7 +167,9 @@ import SiteLayout from '../layouts/Layout.astro';
 		padding-left: 1em;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
+		width: 6.2em;
 		font-size: 1em;
+		margin: 0;
 	}
 
 	.GamerImg {
@@ -136,15 +179,15 @@ import SiteLayout from '../layouts/Layout.astro';
 	}
 
 	.AbtMe {
-		margin-top: 5em;
-		margin-left: 2em;
-		font-size: 2em;
-		margin-bottom: 0.3em;
+		margin-top: 0.8em;
+		margin-left: 0.8em;
+		font-size: 1.5em;
+		margin-bottom: 0em;
 	}
 
 	.AbtMeContent {
 		margin-top: 0em;
-		margin-left: 4em;
+		margin-left: 1.2em;
 	}
 
 	.ButtContainer {
@@ -152,7 +195,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		justify-content: space-evenly;
 		text-align: center;
 		align-items: center;
-		margin-top: 15em;
+		margin-top: 0em;
 		
 
 	}
@@ -167,13 +210,13 @@ import SiteLayout from '../layouts/Layout.astro';
 		border-radius: 30px;
 		font-family: Staatliches;
 		color: white;
-		font-size: 2em;
+		font-size: 1em;
 		padding-left: 5em;
 		padding-right: 4em;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		transition-duration: 0.2s;
-
+		margin-bottom: 0em;
 	}
 
 	.LetsChatter:hover {
@@ -184,8 +227,8 @@ import SiteLayout from '../layouts/Layout.astro';
 	
 	.ButtImg {
 		text-align: center;
-            width: 4vh;
-            height: 4vh;
+		width: 4vh;
+		height: 4vh;
 		padding-left: 1em;
 		
 		
@@ -201,24 +244,24 @@ import SiteLayout from '../layouts/Layout.astro';
 
 	.NavBar {
 		text-align: center;
-            list-style-type: none;
-			display: flex;
-			justify-content: space-evenly;
-			text-align: center;
-			align-items: center;
-			flex-wrap: wrap;
-            margin: 0;
-            overflow: hidden;
-            width: 40%;
-            background: rgba(255, 253.94, 253.94, 0.80); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-            border-radius: 1px; border: 1px #F6F6F6 solid;
-			padding-left: 0em;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0;
+		overflow: hidden;
+		width: 95vw;
+		background: rgba(255, 253.94, 253.94, 0.80); 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+		border-radius: 1px; border: 1px #F6F6F6 solid;
+		padding-left: 0em;
+		margin-top: 0em;
         }
 
         .NavIcon {
-
-        float: left;
+			float: left;
         }
 
         .NavIcon .NavButtLink {
@@ -228,19 +271,20 @@ import SiteLayout from '../layouts/Layout.astro';
         padding-top:  16px;
         padding-bottom:  16px;
         text-decoration: none;
+
         }
 
         .NavButt:hover{
         background: rgba(0, 0, 0, 0.05); 
         border-radius: 25%;
-    }
+
+    	}
 
         .NavButt {
-
-            width: 5vh;
-            height: 5vh;
+			width: 5vh;
+			height: auto;
         }
-
+	
 	/* DESKTOP 
 	------------------------------------------------------------------------
 	*/
@@ -265,6 +309,7 @@ import SiteLayout from '../layouts/Layout.astro';
 
 
 		.container {
+			justify-content: flex-start;
             display: flex;
             flex-wrap: wrap;
             margin-top: 0em;
@@ -272,35 +317,49 @@ import SiteLayout from '../layouts/Layout.astro';
         }
 
 	.Image {
+		z-index: 0;
 		margin-left: 3em;
-		height: 80vh;
-		width: 80vh;
+		height: 41vw;
+		width: 44vw;
 		object-fit: cover;
 		background: rgba(255, 253.94, 253.94, 0.80); 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 		border-radius: 3px; 
+		max-height: 100%;
 	}
 
 	.Content {
-		height: 80vh;
-		width: 112vh;
+		height: 41vw;
+		width: 52.5vw;
 		background: rgba(255, 253.94, 253.94, 0.80); 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 		border-radius: 3px; 
-
+		margin-top: 0em;
 	}
 
 	.Name {
+		z-index: 0; 
+		position: inherit;
 		font-size: 4em;
 		margin-left: 1em;
 		margin-top: 0.5em;
 		margin-bottom: 0em;
+		color: black;
+		text-shadow: none;
+		top: 0%;
+		left: 0%;
 	}
 
 	.AgeRange {
+		z-index: 0; 
+		position: inherit;
 		font-size: 2em;
 		margin-left: 2em;
 		margin-top: 0em;
+		color: black;
+		text-shadow: none;
+		top: 0%;
+		left: 0%;
 	}
 
 	.ConnectThrough {
@@ -317,7 +376,7 @@ import SiteLayout from '../layouts/Layout.astro';
 	.TagList {
 		margin: 0em;
 		width: 9em;
-		
+		padding-left: 2.5em;
 	}
 
 	.Gamer {
@@ -333,6 +392,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		font-size: 1em;
+		width: auto;
 	}
 
 	.GamerImg {
@@ -372,8 +432,8 @@ import SiteLayout from '../layouts/Layout.astro';
 		font-family: Staatliches;
 		color: white;
 		font-size: 2em;
-		padding-left: 5em;
-		padding-right: 4em;
+		padding-left: 10em;
+		padding-right: 9em;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		transition-duration: 0.2s;
@@ -393,6 +453,7 @@ import SiteLayout from '../layouts/Layout.astro';
 	}
 
 	.NavBarContainer {
+		margin-top: 5em;
 		padding-top: 2em;
 		text-align: center;
 		display: flex;
@@ -410,7 +471,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		flex-wrap: wrap;
 		margin: 0;
 		overflow: hidden;
-		width: 40%;
+		width: 40vw;
 		background: rgba(255, 253.94, 253.94, 0.80); 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 		border-radius: 1px; border: 1px #F6F6F6 solid;

@@ -14,9 +14,6 @@ import SiteLayout from '../layouts/Layout.astro';
         <p class="LP">WeConnect+</p>
     </div>
     
-    <!-- <div class="Circ1">
-        <div class="Circ2"></div>
-    </div> -->
     <div class="BoxUnder">
         
         <div class="Login">
@@ -43,8 +40,8 @@ import SiteLayout from '../layouts/Layout.astro';
     </div>
     <style>
     /* MOBILE 
-	---------------------------------------------------------------------
-	*/
+    ---------------------------------------------------------------------
+    */
     body {
             text-align: center;
             font-size: 40px;
@@ -73,7 +70,7 @@ import SiteLayout from '../layouts/Layout.astro';
 
         .Logo {
             width: 15vh;
-		    object-fit: cover;
+            object-fit: cover;
             margin-bottom: 0em;
         }
 
@@ -95,13 +92,13 @@ import SiteLayout from '../layouts/Layout.astro';
             margin-top: 0em;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0); 
-            width: 10em;
+            width: 80%;
             height: auto;
             margin: auto;
         }
 
-        .Email{
-            width: 260px;
+        .Email, .Password {
+            width: 80%;
             height: 40px;
             flex-shrink: 0;
             opacity: 0.6;
@@ -111,20 +108,7 @@ import SiteLayout from '../layouts/Layout.astro';
             border-radius: 3px;
             color: black;
             font-weight: bold;
-
-        }
-
-        .Password{
-            width: 260px;
-            height: 40px;
-            flex-shrink: 0;
-            opacity: 0.6;
-            border: 1px solid #F6F6F6;
-            background: #FFFEFE;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            border-radius: 3px;
-            color: black;
-            font-weight: bold;
+            margin: auto;
         }
 
         .ForgotPass {
@@ -141,11 +125,12 @@ import SiteLayout from '../layouts/Layout.astro';
             border-radius: 25px;
             background: #FAF6F6;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            width: 313px;
+            width: 80%;
             height: 60px;
             border: 1px solid #f6f6f600;
             cursor: pointer;
-		    transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            margin: auto;
         }
 
         .LoginButt:hover {
@@ -171,159 +156,30 @@ import SiteLayout from '../layouts/Layout.astro';
         
 
     /* DESKTOP 
-	------------------------------------------------------------------------
-	*/
+    ------------------------------------------------------------------------
+    */
 
 
     @media (min-width: 75em){
 
-        body {
-            text-align: center;
-            font-size: 40px;
-            margin: 0px;
-            overflow:scroll
-        }
-
-        .login {
-            height: 100vh;
-        }
-
-        .LetsConnect {
-            padding-top: 0.7em;
-            padding-bottom: 1em;
-        }
-
-        .LP {
-            margin-block-start: 0.5em;
-            margin-block-end: 0.5em;
-            font-size: 48px;
-
-        }
-
-        .Logo {
-            width: 4em;
-		    object-fit: cover;
-        }
-
-        .Connect {
-            text-decoration: underline;
-        }
-
-        .Pass {
-            color: black;
-        }
-
-        .Click {
-            color: white;
-            text-decoration: none;
-        }
-
         .BoxUnder {
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.20); 
             width: 20em;
-            height: auto;
-            margin: auto;
         }
 
-        .Email{
+        .Email, .Password {
             width: 310px;
             height: 50px;
-            flex-shrink: 0;
-            opacity: 0.6;
-            border: 1px solid #F6F6F6;
-            background: #FFFEFE;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            border-radius: 3px;
-            color: black;
-            font-weight: bold;
-
-        }
-
-        .Password{
-            width: 310px;
-            height: 50px;
-            flex-shrink: 0;
-            opacity: 0.6;
-            border: 1px solid #F6F6F6;
-            background: #FFFEFE;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            border-radius: 3px;
-            color: black;
-            font-weight: bold;
-        }
-
-        .ForgotPass {
-            font-size: 12px;
-            padding-left: 13em;
         }
 
         .LoginButt {
-            
-            color: #3EB489;
-            font-size: 32px;
-            font-weight: 400;
-            font-family: Staatliches;
-            border-radius: 25px;
-            background: #FAF6F6;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             width: 313px;
             height: 60px;
-            border: 1px solid #f6f6f600;
-            cursor: pointer;
-		    transition-duration: 0.4s;
-        }
-
-        .LoginButt:hover {
-            background: #3eb489;
-            color: white;
         }
 
         .PButt {
             padding-top: 2.1em;
             padding-bottom: 1em;
         }
-
-        .SignUp {
-            color: white;
-            text-decoration: underline;
-            
-        }
-
-        .WTC {
-            font-size: 16px;
-            padding-bottom: 2.3em;
-        }
-
-        /* .Circ1 {
-            position: absolute; 
-            transform: translate(-50%, -50%); 
-            height: 25em; 
-            width:  50em; 
-            border-radius: 25em 25em 0 0; 
-            top: 60.6%;
-            left: 15%;
-            z-index: -1;
-            background: rgba(41.55, 108.38, 40.19, 0.20); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: 0px;
-        } */
-
-        /* .Circ2 {
-            rotate: 180deg;
-            position: absolute; 
-            transform: translate(-50%, -50%); 
-            height: 10em; 
-            width:  20em; 
-            border-radius: 10em 10em 0 0; 
-            bottom: 110%;
-            left: 96%;
-            z-index: -1;
-            background: rgba(41.55, 108.38, 40.19, 0.20); 
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: 0px;
-        } */
     }
     </style>
 </SiteLayout>
-
