@@ -23,7 +23,7 @@ import SiteLayout from '../layouts/Layout.astro';
         <div class="sub-container">
             <div class="Download">
                 <div class="DownTitle"><span class="test">Download the Mobile App on Apple or Android Devices</span></div>
-                <img class="Logo" src="./src/Img/Placeholders/LogoPlaceholder.png"/>
+                <img class="Logo" src="./src/Img/Logo-Black.png"/>
             </div>
             <div class="QR">
                 <img class="Logo" src="./src/Img/Placeholders/qrcode.png"/>
@@ -32,11 +32,13 @@ import SiteLayout from '../layouts/Layout.astro';
             </div>
         </div>
     </div>
+    <div class="navcontain">
         <ul class="NavBar">
-            <li class="NavIcon"><a href="#Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
-            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Placeholders/LogoPlaceholder.png"/></a></li>
+            <li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
+            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Logo-Black.png"/></a></li>
             <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
         </ul>
+    </div>
     <style>
         /* MOBILE 
 	---------------------------------------------------------------------
@@ -46,12 +48,15 @@ import SiteLayout from '../layouts/Layout.astro';
 
 
         .title {
+            text-align: center;
             display: flex;
+            justify-content: center;
             align-items: center;
             margin-left: 1em;
         }
 
         .text {
+            text-align: center;
             color: white;
             font-size: 2em;
         }
@@ -61,7 +66,7 @@ import SiteLayout from '../layouts/Layout.astro';
             border-radius: 50%;
             width: 5em;
             height: 5em;
-            margin-left: 30%;
+            margin-left: 1em;
             
         }
 
@@ -141,7 +146,7 @@ import SiteLayout from '../layouts/Layout.astro';
         .sub-container {
             display: flex;
             flex-direction: column;
-            margin-left: 3em;
+            margin-left: 0em;
         }
 
         .Download {
@@ -179,12 +184,17 @@ import SiteLayout from '../layouts/Layout.astro';
             height: 0em;
         }
         
+        .navcontain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+        }
 
         .NavBar {
             list-style-type: none;
             margin: 0;
             width: 25em;
-            margin: 3% auto; 
             left: 0;
             right: 0;
             display: flex;
@@ -210,8 +220,7 @@ import SiteLayout from '../layouts/Layout.astro';
 
         .NavButt:hover{
         background: rgba(0, 0, 0, 0.05); 
-        border-radius: 25%;
-    }
+        }
 
         .NavButt {
             text-align: center;
@@ -232,6 +241,7 @@ import SiteLayout from '../layouts/Layout.astro';
 
         .title {
             display: flex;
+            justify-content: flex-start;
             align-items: center;
             margin-left: 3em;
         }
@@ -251,7 +261,7 @@ import SiteLayout from '../layouts/Layout.astro';
         .container {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 1em;
+            margin-top: 1vh;
             color: black;
         }
 
@@ -260,7 +270,7 @@ import SiteLayout from '../layouts/Layout.astro';
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 3px;
             border: 1px #F6F6F6 solid;
-            width: 140vh;
+            width: 70vw;
             height: 80vh;
             margin-left: 3em;
         }
@@ -329,21 +339,21 @@ import SiteLayout from '../layouts/Layout.astro';
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 3px;
             border: 1px #F6F6F6 solid;
-            width: 45vh;
+            width: 20vw;
             height: 35vh;
         }
 
         .DownTitle {
             margin-left: 3em;
             margin-right: 3em;
-            margin-top: 1em;
-            font-size: 2.25em;
+            margin-top: 1vh;
+            font-size: 1.5vw;
         }
 
         .Logo {
-            margin-top: 3em;
-            width: 15em;
-            height: 15em;
+            margin-top: 1vh;
+            width: 40%;
+            height: auto;
             
         }
 
@@ -354,7 +364,7 @@ import SiteLayout from '../layouts/Layout.astro';
             border-radius: 3px;
             border: 1px #F6F6F6 solid;
             margin-top: 10vh;
-            width: 45vh;
+            width: 20vw;
             height: 35vh;
         }
         
@@ -392,13 +402,12 @@ import SiteLayout from '../layouts/Layout.astro';
 
         .NavButt:hover{
         background: rgba(0, 0, 0, 0.05); 
-        border-radius: 25%;
     }
 
         .NavButt {
             text-align: center;
-            width: 5vh;
-            height: 5vh;
+            width: 4em;
+            height: 4em;
         }
 
     }

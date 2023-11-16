@@ -1,0 +1,79 @@
+---
+import SiteLayout from '../layouts/Layout.astro';
+
+// Variables of Names and Characteristics that can be changed for future use
+const name = 'James Matthews';
+const age = '19'
+
+---
+<SiteLayout>
+    <div class="title">
+        <h1 class="text">Settings</h1>
+    </div>
+
+    <div class="Content">
+        <h2>Account Settings</h2>
+        <h3>profile Information:</h3>
+        <h5>Name</h5>
+        <h6>{name}</h6>
+        <h5>Age</h5>
+        <h6>{age}</h6>
+        <h5>About me</h5>
+        <div class = box>Lorem ipsum dolor sit amet, 
+        consectetuer adipiscing elit. Aenean commodo l
+        igula eget dolor. Aenean massa. </div>
+        <h3>Notifications</h3>
+        <input type="radio" id="notificationChoice" value="Yes">
+        <label for="notificationChoiceYes">Yes</label>
+        <input type="radio" id="notificationChoice" value="No">
+        <label for="notificationChoiceNo">No</label>
+            <h3>Privacy</h3>
+        </label>
+        <h3>Privacy</h5>
+        <p>CHANGE PASSWORD</p>
+        <h3>Your Chatter Connection</h3>
+        <p>Instagram</p>
+    </div>
+
+    <style>
+.Content h2{
+    color: black;
+}
+
+.Content h3{
+    color: black;
+}
+
+.Content h5{
+    color: #6C8E7D;
+}
+
+.Content h6{
+    font-family: 'Inter', sans-serif;   
+}
+
+p {
+    color: black;
+}
+
+.title {
+            color: white;
+            font-size: 2em;
+            margin: 1em;
+        }
+
+.Content {
+    height: 65vh;
+    width: 80vw;
+    background: rgba(255, 253.94, 253.94, 0.80); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 3px; 
+    padding: 3em;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    </style>
+</SiteLayout>
+
