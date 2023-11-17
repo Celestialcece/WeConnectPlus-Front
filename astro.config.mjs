@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://celestialcece.github.io'
+  site: 'https://celestialcece.github.io',
+  base: '/WeConnectPlus-Front',
 })
