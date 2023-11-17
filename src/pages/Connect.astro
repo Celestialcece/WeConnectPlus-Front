@@ -4,29 +4,29 @@ import SiteLayout from '../layouts/Layout.astro';
 
 <SiteLayout>
     <div class="title">
-        <h1 class="text">Lets Connect</h1> <img class="pfp" src="./src/Img/Placeholders/pfplaceholder.png"/>
+        <h1 class="text">Lets Connect</h1> <img class="pfp" src="./public/Img/pfp.jpg"/>
     </div>
     <div class="container">
         <div class="connections">
             <div class="ConTitle">YOUR CONNECTIONS</div>
             <div class="Posts">
                 <div class="PostCont">
-                    <img class="PostPFP" src="./src/Img/Placeholders/LogoPlaceholder.png"/>
+                    <img class="PostPFP" src="./public/Img/cpfp.jpg"/>
                     <div class="PostSub">
-                        <div class="Name">John Doe - Connected x ago</div>
+                        <div class="Name">Celeste - Connected 10 Days ago</div>
                         <div class="Message">I dunno I'd have to be honest i don't like chips</div>
                     </div>
-                    <div class="Read"><img  src="./src/Img/Vectortick.png"/></div>
+                    <div class="Read"><img  src="./public/Img/Vectortick.png"/></div>
                 </div>
             </div>
         </div>
         <div class="sub-container">
             <div class="Download">
                 <div class="DownTitle"><span class="test">Download the Mobile App on Apple or Android Devices</span></div>
-                <img class="Logo" src="./src/Img/Logo-Black.png"/>
+                <img class="Logo" src="./public/Img/Logo-Black.png"/>
             </div>
             <div class="QR">
-                <img class="Logo" src="./src/Img/Placeholders/qrcode.png"/>
+                <img class="Logo" src="./public/Img/Placeholders/qrcode.png"/>
                 <div class="DownTitle"><span class="test">Scan Here for profile share</span></div>
             </div>
             </div>
@@ -34,9 +34,9 @@ import SiteLayout from '../layouts/Layout.astro';
     </div>
     <div class="navcontain">
         <ul class="NavBar">
-            <li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
-            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Logo-Black.png"/></a></li>
-            <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
+            <li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./public/Img/settings.svg"/></a></li>
+            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./public/Img/Logo-Black.png"/></a></li>
+            <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./public/Img/chat.svg"/></a></li>
         </ul>
     </div>
     <style>
@@ -102,6 +102,8 @@ import SiteLayout from '../layouts/Layout.astro';
             margin-left: 0.1em;
             margin-right: 0.1em;
             border-radius: 9px;
+            padding-top: 1em;
+            padding-bottom: 1em;
             background: white;
             height: 3em;
         }
