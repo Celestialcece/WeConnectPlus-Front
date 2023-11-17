@@ -10,70 +10,262 @@ const age = '19'
     <div class="title">
         <h1 class="text">Settings</h1>
     </div>
-
+    <div class="Containdeez">
     <div class="Content">
-        <h2>Account Settings</h2>
-        <h3>profile Information:</h3>
-        <h5>Name</h5>
-        <h6>{name}</h6>
-        <h5>Age</h5>
-        <h6>{age}</h6>
-        <h5>About me</h5>
-        <div class = box>Lorem ipsum dolor sit amet, 
-        consectetuer adipiscing elit. Aenean commodo l
-        igula eget dolor. Aenean massa. </div>
-        <h3>Notifications</h3>
+        <div class="ContentCont">
+        <p class="AccountSettings">Account Settings</p>
+        <div class="Info">
+            <p class="Profile-Info">profile Information:</p>
+            <p class="NameHeader">Name:</p>
+            <p class="Name">{name}</p>
+            <p class="AgeHeader">Age:</p>
+            <p class="Age">{age}</p>
+        </div>
+        <p class="AbtMeHeader">About me</p>
+        <input type="text" id="fname" name="fname" class="AbtMeText"><br><br>
+        <input type="submit" value="Submit" class="Button">
+
+        <p class="NotificationsTitle">Notifications</p>
         <input type="radio" id="notificationChoice" value="Yes">
         <label for="notificationChoiceYes">Yes</label>
         <input type="radio" id="notificationChoice" value="No">
         <label for="notificationChoiceNo">No</label>
-            <h3>Privacy</h3>
-        </label>
-        <h3>Privacy</h5>
-        <p>CHANGE PASSWORD</p>
-        <h3>Your Chatter Connection</h3>
-        <p>Instagram</p>
+        <p class="PrivacyTitle">Privacy</p>
+        <button class="ChangePass">CHANGE PASSWORD</button>
+        <p class="ChatterConnection">Your Chatter Connection</p>
+        <button class="InstaButt">Instagram</button>
+    </div>
+    <div class="navcontain">
+        <ul class="NavBar">
+            <li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
+            <li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Logo-Black.png"/></a></li>
+            <li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
+        </ul>
+    </div>  
     </div>
 
+</div>
+
     <style>
-.Content h2{
-    color: black;
-}
 
-.Content h3{
-    color: black;
-}
 
-.Content h5{
-    color: #6C8E7D;
-}
 
-.Content h6{
-    font-family: 'Inter', sans-serif;   
-}
-
-p {
-    color: black;
-}
-
-.title {
-            color: white;
-            font-size: 2em;
-            margin: 1em;
+        body {
+            margin: 0;
         }
 
-.Content {
-    height: 65vh;
-    width: 80vw;
-    background: rgba(255, 253.94, 253.94, 0.80); 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 3px; 
-    padding: 3em;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        .ChangePass {
+            color: #3EB489;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: Staatliches;
+            background: #FAF6F6;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 20%;
+            height: 40px;
+            border: 1px solid #f6f6f600;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            margin: auto;
+        }
+
+        .ChangePass:hover {
+            background: #3eb489;
+            color: white;
+        }
+
+        .InstaButt {
+            color: white;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: Staatliches;
+            width: 20%;
+            height: 40px;
+            border: 1px solid #f6f6f600;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            margin: auto;
+            background: rgba(171.59, 73.90, 161.82, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px;
+            background-image: url("./src/Img/Insta.png");
+            background-position: 4vw;
+            background-repeat: no-repeat;
+        }
+
+        .InstaButt:hover {
+            background: rgba(116, 50, 109, 0.8);
+            color: white;
+            background-image: url("./src/Img/Insta.png");
+            background-position: 4vw;
+            background-repeat: no-repeat;
+        }
+
+        .ChatterConnection {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+        }
+
+        .PrivacyTitle {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+        }
+
+        .NotificationsTitle {
+            margin-bottom: 0;
+            font-size: 2em;
+        }
+
+        .AbtMeText {
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; 
+            border: 1px #F6F6F6 solid;
+            width: 25%;
+            height: 5em;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .Button {
+            
+            color: #3EB489;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: Staatliches;
+            background: #FAF6F6;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 6%;
+            height: 40px;
+            border: 1px solid #f6f6f600;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            margin: auto;
+        }
+
+        .Button:hover {
+            background: #3eb489;
+            color: white;
+        }
+
+
+        .NameHeader{
+            color: #6C8E7D;
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .Name {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 1vw;
+        }
+
+        .AgeHeader{
+            color: #6C8E7D;
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .Age {
+            padding-left: 1vw;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .AccountSettings {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+        .Info{
+            margin-top: 1em;
+        }
+        .Profile-Info {
+            margin-top: 0;
+            font-size: 2em;
+        }
+
+        .AbtMeHeader {
+            color: #6C8E7D;
+            font-size: 1.5em;
+        }
+        .title {
+            color: white;
+            font-size: 2em;
+            margin-left: 10vw;
+        }
+
+        .ContentCont {
+            margin-left: 1vw;
+        }
+
+        .Containdeez {
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        }
+
+        .Content {
+            color: black;
+            height: 81vh;
+            width: 80vw;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 3px; 
+        }
+
+        .AbtMeText:focus {
+            border: 1px solid #555;
+        }
+
+        .navcontain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0em;
+        }
+
+        .NavBar {
+            list-style-type: none;
+            margin: 0;
+            width: 30em;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(255, 253.94, 253.94, 0.80); 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+            border-radius: 1px; border: 1px #F6F6F6 solid;
+            padding-left: 0em;
+        }
+
+        .NavIcon {
+        float: left;
+        }
+
+        .NavIcon .NavButtLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top:  16px;
+        padding-bottom:  16px;
+        text-decoration: none;
+        }
+
+        .NavButt:hover{
+        background: rgba(0, 0, 0, 0.05); 
+        }
+
+        .NavButt {
+            text-align: center;
+            width: 5vh;
+            height: 5vh;
+        }
     </style>
 </SiteLayout>
 
