@@ -5,6 +5,13 @@ import SiteLayout from '../layouts/Layout.astro';
 <div class="title">
 	<h1 class="text">Profile Match</h1>
 </div>
+<div class="NavBarContainer">
+	<ul class="NavBar">
+		<li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
+		<li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Logo-Black.png"/></a></li>
+		<li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
+	</ul>
+</div>
 <div class="container">
 	<div class="connections">
 		<img class="Image" src="./src/Img/Placeholders/Placeholder.png"/>
@@ -25,13 +32,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		<div class="ButtContainer">
 			<button class="LetsChatter">Lets Chatter <img class="ButtImg"src="./src/Img/Chatter.png"/></button>
 		</div>
-		<div class="NavBarContainer">
-			<ul class="NavBar">
-				<li class="NavIcon"><a href="./Settings" class="NavButtLink"><img class="NavButt" src="./src/Img/settings.svg"/></a></li>
-				<li class="NavIcon"><a href="./Profile" class="NavButtLink"><img class="NavButt" src="./src/Img/Logo-Black.png"/></a></li>
-				<li class="NavIcon"><a href="./Connect" class="NavButtLink"><img class="NavButt" src="./src/Img/chat.svg"/></a></li>
-			</ul>
-		</div>
+
 	</div>
 </div>
 </div>
@@ -235,11 +236,12 @@ import SiteLayout from '../layouts/Layout.astro';
 	}
 
 	.NavBarContainer {
-		padding-top: 2em;
+		padding-top: 0;
 		text-align: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-top: 0;
 	}
 
 	.NavBar {
@@ -454,8 +456,8 @@ import SiteLayout from '../layouts/Layout.astro';
 	}
 
 	.NavBarContainer {
-		margin-top: 10.3vh;
-
+		margin-top: 0vh;
+		
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -472,7 +474,7 @@ import SiteLayout from '../layouts/Layout.astro';
 		flex-wrap: wrap;
 		margin: 0;
 		overflow: hidden;
-		width: 40vw;
+		width: 96vw;
 		background: rgba(255, 253.94, 253.94, 0.80); 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 		border-radius: 1px; border: 1px #F6F6F6 solid;
